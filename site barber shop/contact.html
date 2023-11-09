@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Barber Shop</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> <!--Font txt-->
+</head>
+<body>
+    <header>
+        <div id="box">
+            <h1><img src="imgs/logo.png" alt="logo of Barber Shop"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <label for="name">Name: </label>
+                <input type="text" id="name" class="input-pattern" required>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" class="input-pattern" required>
+
+                <label for="tel">Telephone number: </label>
+                <input type="number" id="tel" class="input-pattern" required>
+
+                <label for="message">Message: </label>
+                <textarea id="message" cols="90" rows="10" class="input-pattern"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>How prefer you our contact?</legend>
+                <label for="email-radio"><input type="radio" id="email-radio" value="email" name="radio-contact" checked>Email</label>
+
+                <label for="telephone-radio"><input type="radio" id="telephone-radio" value="telephone" name="radio-contact">Telephone</label>
+
+                <label for="whatsapp-radio"><input type="radio" id="whatsapp-radio" value="whatsapp" name="radio-contact">Whatsapp</label>
+                
+            </fieldset>
+
+            <label class="checkbox"> <input type="checkbox" checked> like to receive our news by email?</label>
+            
+            <fieldset>
+                <legend>what time do you prefer? </legend>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Night</option>
+            </fieldset>
+
+            <input type="submit" value="save" class="save">
+        </form>
+        
+        <table>
+            <thead>
+                <th>Day</th>
+                <th>hours</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>08 ~ 15</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>08 ~ 15</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>08 ~ 15</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="imgs/logo-white.png" alt="logo of Barber Shop">
+        <p class="copyright">&copy; Copyright: Guilherme Freitas da Silva. 2020</p> <!--&copy icon of (unicode)-->
+    </footer>
+</body>
+</html>
